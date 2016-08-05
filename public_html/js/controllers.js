@@ -10,13 +10,13 @@
 
 var myAppControllers = angular.module('myAppControllers', []);
 
-myAppControllers.controller('MainCtrl', ['$scope',
-    function ($scope) {
+myAppControllers.controller('MainCtrl', ['$scope','$location','$http',
+    function MainCtrl($scope,$location,$http) {
         $scope.message = "Hello World";
     }]);
 
-myAppControllers.controller('ShowCtrl', ['$scope',
-    function ($scope) {
+myAppControllers.controller('ShowCtrl', ['$scope','$location','$http',
+    function ShowCtrl($scope,$location,$http) {
         $scope.message = "Show The World";
     }]);
         

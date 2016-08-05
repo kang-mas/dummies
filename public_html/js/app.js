@@ -20,7 +20,7 @@ myApp.config(['$routeProvider','$locationProvider',
                 }).
                 when('/show',
                 {
-                    templateUrl:'partials/main.html',
+                    templateUrl:'partials/show.html',
                     controller: 'ShowCtrl'
                 });
             $locationProvider.html5Mode(false).hashPrefix('!');    
