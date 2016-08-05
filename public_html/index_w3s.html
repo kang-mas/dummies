@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>AngularJS Dummies</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="bower_components/angular/angular.min.js"></script>
+        <script src="bower_components/angular-route/angular-route.min.js"></script>
+        <script src="bower_components/angular-resource/angular-resource.min.js"></script>
+        <script src="bower_components/angular-cookies/angular-cookies.min.js"></script>
+        <style>
+            table, th , td {
+                border: 1px solid grey;
+                border-collapse: collapse;
+                padding: 5px;
+            }
+            table tr:nth-child(odd) {
+                background-color: #f1f1f1;
+            }
+            table tr:nth-child(even) {
+                background-color: #ffffff;
+            }
+        </style> 
+    </head>
+    <body>
+        <div ng-app="myApp" ng-init="names = ['Jani', 'Hege', 'Kai']" ng-controller="myCtrl">
+            First Name: <input type="text" ng-model="firstName"  ><br>
+            Last Name: <input type="text" ng-model="lastName"><br>
+            <br>
+            Full Name: {{firstName + " " + lastName}}
+            <br>
+            <table>
+                <tr ng-repeat="customer in customers">
+                    <td>{{customer.Name}}</td>
+                    <td>{{customer.Country}}</td>
+                </tr>
+            </table>            
+            <br>
+
+            <form name="myForm">
+                Email:
+                <input type="email" name="myEmail" ng-model="text">
+                <span ng-show="myForm.myEmail.$error.email">
+                    Not a valid e-mail address
+                </span>
+            </form>
+        </div>
+        <script src="myApp.js"></script>
+        <script src="myCtrl.js"></script>
+    </body>
+</html>
