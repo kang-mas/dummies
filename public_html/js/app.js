@@ -3,10 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+'use strct';
+angular.module('myApp.directives', []);
 var myApp = angular.module('myApp', [
     'ngRoute',
-    'myAppControllers',
-    'myAppservices'
+    'myAppControllers'
+    
 ]);
 
 //define routes
@@ -52,4 +54,14 @@ myApp.config(['$routeProvider', '$locationProvider',
         $locationProvider.html5Mode(false).hashPrefix('!');
     }
 ]);
+
+//angular.module('myApp.directives').directive('slideit', function () {
+//    
+//  return {
+//    link: function (scope, element, attrs) {  
+//      console.log("$element"+element);
+//      
+//    }
+//  };
+//});
 

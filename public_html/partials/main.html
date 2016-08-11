@@ -1,19 +1,101 @@
 <div ng-include src="'partials/menu.html'"></div>
-<div id="container" class="container">
-    <div class="blog-post-label">Blog Posts</div>
-    <div class="post-wrapper">
-        <div ng-repeat="blogPost in blogList">
-            <div class="blog-post-outer">
-                <div class="blog-intro-text">
-                    Posted: {{blogPost.date | date:'MM/dd/yy @ h:mma'}}
+
+<div id="container-fluid" ng-controller="BlogCtrl" class="container-fluid">
+
+    <div class="slider-wrapper theme-bar">
+        <div id="slider3" class="nivoSlider" >
+            <img title="" src="business_core/img/demo/slide_1.jpg" alt="" width="100%"  />
+            <img title="" src="business_core/img/demo/slide_2.jpg" alt="" width="100%"  />
+            <img title="" src="business_core/img/demo/slide_3.jpg" alt="" width="100%"  />
+        </div>
+
+    </div>
+    <div class="bg-1">
+        <div class="container">
+            <h3 class="text-center">NEW RELEASE</h3>
+            <p class="text-center">Lorem ipsum we'll play you some music.<br> Remember to book your tickets!</p>
+            <div class="row text-center">
+                <div class="col-sm-3">
+                    <div class="thumbnail">
+                        <img src="images/11.jpg" alt="Paris">
+                        <p><strong>Paris</strong></p>
+                        <p>Fri. 27 November 2015</p>
+                        <button class="btn">Buy Now</button>
+                    </div>
                 </div>
-                <div class="blog-intro-text">
-                    {{blogPost.introText}}
+                <div class="col-sm-3">
+                    <div class="thumbnail">
+                        <img src="images/7.jpg" alt="New York">
+                        <p><strong>New York</strong></p>
+                        <p>Sat. 28 November 2015</p>
+                        <button class="btn">Buy Now</button>
+                    </div>
                 </div>
-                <div class="blog-read-more">
-                    <a href="#!/blogpost/{{blogPost._id}}">Read More</a>
+                <div class="col-sm-3">
+                    <div class="thumbnail">
+                        <img src="images/8.jpg" alt="San Francisco">
+                        <p><strong>San Francisco</strong></p>
+                        <p>Sun. 29 November 2015</p>
+                        <button class="btn">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="thumbnail">
+                        <img src="images/9.jpg" alt="San Francisco">
+                        <p><strong>San Francisco</strong></p>
+                        <p>Sun. 29 November 2015</p>
+                        <button class="btn">Buy Now</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="bg-1">
+        <div class="container">
+            <div class="row text-center">
+                <h3 class="text-center">MOST POPULER</h3>
+                <p class="text-center">Lorem ipsum we'll play you some music.<br> Remember to book your tickets!</p>
+                <div class="col-sm-3">
+                    <div class="thumbnail">
+                        <img src="images/4.jpg" alt="Paris">
+                        <p><strong>Paris</strong></p>
+                        <p>Fri. 27 November 2015</p>
+                        <button class="btn">Buy Now</button>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="thumbnail">
+                        <img src="images/3.jpg" alt="New York">
+                        <p><strong>New York</strong></p>
+                        <p>Sat. 28 November 2015</p>
+                        <button class="btn">Buy Now</button>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="thumbnail">
+                        <img src="images/2.jpg" alt="San Francisco">
+                        <p><strong>San Francisco</strong></p>
+                        <p>Sun. 29 November 2015</p>
+                        <button class="btn">Buy Now</button>
+                    </div>
+                </div>
+
+                <div class="col-sm-3">
+                    <div class="thumbnail">
+                        <img src="images/1.jpg" alt="San Francisco">
+                        <p><strong>San Francisco</strong></p>
+                        <p>Sun. 29 November 2015</p>
+                        <button class="btn">Buy Now</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+    <div style="clear:both; height: 10px"></div>
+
+    <div id="footer" ng-include src="'partials/footer.html'"></div>
+
+</div><!-- close container -->
+

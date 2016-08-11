@@ -14,24 +14,11 @@ var myAppControllers = angular.module('myAppControllers', []);
 myAppControllers.controller('BlogCtrl', [
     '$scope',
     function BlogCtrl($scope) {
-        $scope.blogList = [
-            {
-                "_id": 1,
-                "date": 1400623623107,
-                "introText": "This is a blog post about AngularJS,\n\
-We will cover how to build",
-                "blogText": "This is a blog post about AngularJS,\n\
-We will cover how to build a blog and how to add comments to blog post "
-            },
-            {
-                "_id": 2,
-                "date": 1800623623107,
-                "introText": "This is a blog post about AngularJS,\n\
-We will cover how to build",
-                "blogText": "This is a blog post about AngularJS,\n\
-We will cover how to build a blog and how to add comments to blog post "
-            }
-        ];
+        console.log("BlogCtrl");
+         $('#slider3').nivoSlider({
+                pauseTime:5000,
+                pauseOnHover:false
+            });        
     }
 ]);
 
