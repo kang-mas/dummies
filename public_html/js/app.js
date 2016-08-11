@@ -8,7 +8,7 @@ angular.module('myApp.directives', []);
 var myApp = angular.module('myApp', [
     'ngRoute',
     'myAppControllers'
-    
+
 ]);
 
 //define routes
@@ -19,7 +19,12 @@ myApp.config(['$routeProvider', '$locationProvider',
                 when('/',
                         {
                             templateUrl: 'partials/main.html',
-                            controller: 'BlogCtrl'
+                            controller: 'HomeCtrl'
+                        }).
+                when('/products',
+                        {
+                            templateUrl: 'partials/products.html',
+                            controller: 'ProductsCtrl'
                         }).
                 when('/blogpost/:id',
                         {

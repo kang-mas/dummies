@@ -10,15 +10,24 @@
 
 var myAppControllers = angular.module('myAppControllers', []);
 //chapter 5
-
-myAppControllers.controller('BlogCtrl', [
+//home
+myAppControllers.controller('HomeCtrl', [
     '$scope',
-    function BlogCtrl($scope) {
-        console.log("BlogCtrl");
+    function HomeCtrl($scope) {
+        console.log("HomeCtrl");
          $('#slider3').nivoSlider({
                 pauseTime:5000,
                 pauseOnHover:false
             });        
+    }
+]);
+//products
+
+myAppControllers.controller('ProductsCtrl', [
+    '$scope',
+    function ProductsCtrl($scope) {
+       // console.log("BlogCtrl");
+         
     }
 ]);
 
