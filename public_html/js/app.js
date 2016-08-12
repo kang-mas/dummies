@@ -26,6 +26,16 @@ myApp.config(['$routeProvider', '$locationProvider',
                             templateUrl: 'partials/products.html',
                             controller: 'ProductsCtrl'
                         }).
+                when('/newarrive',
+                        {
+                            templateUrl: 'partials/products.html',
+                            controller: 'NewArriveCtrl'
+                        }).
+                when('/sale',
+                        {
+                            templateUrl: 'partials/products.html',
+                            controller: 'SaleCtrl'
+                        }).
                 when('/blogpost/:id',
                         {
                             templateUrl: 'partials/blogpost.html',

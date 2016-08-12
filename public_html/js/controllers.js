@@ -31,6 +31,26 @@ myAppControllers.controller('ProductsCtrl', [
     }
 ]);
 
+myAppControllers.controller('NewArriveCtrl', [
+    '$scope',
+    function NewArriveCtrl($scope) {
+       // console.log("BlogCtrl");
+         
+    }
+]);
+
+myAppControllers.controller('SaleCtrl', [
+    '$scope',
+    function SaleCtrl($scope) {
+       // console.log("BlogCtrl");
+         
+    }
+]);
+
+
+
+
+
 myAppControllers.controller('BlogViewCtrl', [
     '$scope', '$routeParams',
     function BlogViewCtrl($scope, $routeParams) {

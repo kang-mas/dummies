@@ -1,19 +1,67 @@
 <div ng-include src="'partials/menu.html'"></div>
 
 <div id="container-fluid" ng-controller="ProductsCtrl" class="container-fluid">
-    
-        <div class="well well-sm">
-            <strong>Category Title</strong>
-            <!--            <div class="btn-group">
-                            <a href="#" id="list" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-th-list">
-                                </span>List</a> <a href="#" id="grid" class="btn btn-default btn-sm"><span
-                                    class="glyphicon glyphicon-th"></span>Grid</a>
-                        </div>-->
+
+    <div class="well well-sm">
+        <!--        <strong>Category Title</strong>
+                            <div class="btn-group">
+                                <a href="#" id="list" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-th-list">
+                                    </span>List</a> <a href="#" id="grid" class="btn btn-default btn-sm"><span
+                                        class="glyphicon glyphicon-th"></span>Grid</a>
+                            </div>-->
+        <div class="row">
+            <div class="left">
+                <div class="col-xs-8 col-xs-offset-2">
+
+                    <div class="input-group">
+
+                        <div class="input-group-btn search-panel">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                <span id="search_concept">Category</span> <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#contains">Contains</a></li>
+                                <li><a href="#its_equal">It's equal</a></li>
+                                <li><a href="#greather_than">Greather than ></a></li>
+                                <li><a href="#less_than">Less than < </a></li>
+                                <li class="divider"></li>
+                                <li><a href="#all">Anything</a></li>
+                            </ul>
+                        </div>
+                        <input type="hidden" name="search_param" value="all" id="search_param">         
+                        <input type="text" class="form-control" name="x" placeholder="Search term...">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                        </span>
+                    </div>
+                </div>
+            </div>
         </div>
-    
+    </div>
+
+
     <div class="bg-1">
         <div class="container">
             <div id="products" class="row ">
+                <div class="col-sm-4 col-md-3">
+                    <div class="thumbnail">
+                        <img class="group" src="images/11.jpg" alt="San Francisco">
+                        <div class="caption">
+                            <p class="text-center"><strong>Product title</strong></p>
+                            <p>Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+                                sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                            <div class="row text-center">
+                                <div class="col-xs-12 col-md-6 price">
+                                    <p class="lead">
+                                        $21.000</p>
+                                </div>
+                                <div class="col-xs-12 col-md-6">
+                                    <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="col-sm-4 col-md-3">
                     <div class="thumbnail">
                         <img class="group" src="images/1.jpg" alt="San Francisco">
@@ -33,9 +81,9 @@
                         </div>
                     </div>
                 </div>
-                  <div class="col-sm-4 col-md-3">
+                <div class="col-sm-4 col-md-3">
                     <div class="thumbnail">
-                        <img class="group" src="images/1.jpg" alt="San Francisco">
+                        <img class="group" src="images/2.jpg" alt="San Francisco">
                         <div class="caption">
                             <p class="text-center"><strong>Product title</strong></p>
                             <p>Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
@@ -52,9 +100,9 @@
                         </div>
                     </div>
                 </div>
-                  <div class="col-sm-4 col-md-3">
+                <div class="col-sm-4 col-md-3">
                     <div class="thumbnail">
-                        <img class="group" src="images/1.jpg" alt="San Francisco">
+                        <img class="group" src="images/3.jpg" alt="San Francisco">
                         <div class="caption">
                             <p class="text-center"><strong>Product title</strong></p>
                             <p>Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
@@ -71,9 +119,9 @@
                         </div>
                     </div>
                 </div>
-                  <div class="col-sm-4 col-md-3">
+                <div class="col-sm-4 col-md-3">
                     <div class="thumbnail">
-                        <img class="group" src="images/1.jpg" alt="San Francisco">
+                        <img class="group" src="images/4.jpg" alt="San Francisco">
                         <div class="caption">
                             <p class="text-center"><strong>Product title</strong></p>
                             <p>Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
@@ -90,9 +138,9 @@
                         </div>
                     </div>
                 </div>
-                  <div class="col-sm-4 col-md-3">
+                <div class="col-sm-4 col-md-3">
                     <div class="thumbnail">
-                        <img class="group" src="images/1.jpg" alt="San Francisco">
+                        <img class="group" src="images/5.jpg" alt="San Francisco">
                         <div class="caption">
                             <p class="text-center"><strong>Product title</strong></p>
                             <p>Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
@@ -109,9 +157,9 @@
                         </div>
                     </div>
                 </div>
-                  <div class="col-sm-4 col-md-3">
+                <div class="col-sm-4 col-md-3">
                     <div class="thumbnail">
-                        <img class="group" src="images/1.jpg" alt="San Francisco">
+                        <img class="group" src="images/6.jpg" alt="San Francisco">
                         <div class="caption">
                             <p class="text-center"><strong>Product title</strong></p>
                             <p>Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
@@ -128,9 +176,9 @@
                         </div>
                     </div>
                 </div>
-                  <div class="col-sm-4 col-md-3">
+                <div class="col-sm-4 col-md-3">
                     <div class="thumbnail">
-                        <img class="group" src="images/1.jpg" alt="San Francisco">
+                        <img class="group" src="images/7.jpg" alt="San Francisco">
                         <div class="caption">
                             <p class="text-center"><strong>Product title</strong></p>
                             <p>Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
@@ -149,7 +197,19 @@
                 </div>
             </div>
         </div>
+        <div class="container " style="text-align: center">
+            <ul class="pagination">
+                <li class="disabled"><a href="#">«</a></li>
+                <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">»</a></li>
+            </ul>
+        </div>
     </div>
+    <div style="clear:both; height: 10px"></div>
     <div id="footer" ng-include src="'partials/footer.html'"></div>
 
 </div><!-- close container -->
